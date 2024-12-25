@@ -69,7 +69,7 @@ nav span {
   background-size: cover;
   background-position: center;
   font-family: "Bebas Neue", sans-serif;
-  background-image: url(./image/hero-image.png);
+  background-image: url(./hero-image.png);
 }
 
 .hero h3 {
@@ -123,7 +123,7 @@ nav span {
 .destination {
   height: 902px;
   position: relative;
-  background: url("./image/map-image.png") center/cover no-repeat;
+  background: url("./map-image.png") center/cover no-repeat;
 }
 
 .destination-title {
@@ -272,7 +272,7 @@ nav span {
 
 .price {
   height: 1120px;
-  background: url("./image/price.png") center/cover no-repeat;
+  background: url("./price.png") center/cover no-repeat;
 }
 
 .price-header {
