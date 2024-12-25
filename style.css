@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yuji+Mai&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanuman:wght@100;300;400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yuji+Mai&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-align-justify-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  top: 30px;
+  z-index: 10;
+  width: 1440px;
+  position: fixed;
+  padding: 0 116px;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+.pinetour-logo {
+  width: 101px;
+  height: 35px;
+}
+
+nav {
+  column-gap: 24px;
+}
+
+nav span {
+  width: 100px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.language {
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.hero {
+  height: 773px;
+  font-weight: 400;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  font-family: "Bebas Neue", sans-serif;
+  background-image: url(./image/hero-image.png);
+}
+
+.hero h3 {
+  opacity: 72%;
+  font-size: 80px;
+  color: #e8edf2;
+}
+
+.hero h1 {
+  color: #fdfdfe;
+  font-size: 250px;
+  line-height: 225px;
+}
+
+.hero h4 {
+  opacity: 80%;
+  color: white;
+  font-size: 64px;
+  font-weight: 800;
+  font-family: "Hanuman", serif;
+}
+
+.locations {
+  height: 500px;
+  column-gap: 40px;
+  background: linear-gradient(to bottom, rgba(153, 184, 218, 0.5), rgba(253, 253, 254, 0.8));
+}
+
+.location {
+  position: relative;
+  border-radius: 40px;
+}
+
+.location h3 {
+  top: 50%;
+  left: 50%;
+  width: 232px;
+  color: white;
+  font-size: 37px;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: "Bebas Neue", sans-serif;
+  filter: drop-shadow(0 4px 4.9px black);
+}
+
+.location:hover {
+  box-shadow: -8px -8px 0px 0px rgba(46, 65, 71, 0.4), 8px 8px 0px 0px rgba(41, 114, 139, 0.25);
+}
+
+.destination {
+  height: 902px;
+  position: relative;
+  background: url("./image/map-image.png") center/cover no-repeat;
+}
+
+.destination-title {
+  row-gap: 10px;
+  padding-top: 120px;
+  flex-direction: column;
+}
+
+.destination-title h2 {
+  font-size: 40px;
+}
+
+.destination-title h6 {
+  opacity: 70%;
+  font-size: 20px;
+  color: #181818;
+}
+
+.destination-places {
+  margin: 60px 120px 0;
+}
+
+.place {
+  width: 513px;
+  height: 112px;
+  padding: 0 30px;
+  margin-bottom: 20px;
+  border-radius: 9999px;
+  border: 4px solid transparent;
+  justify-content: space-between;
+}
+
+.place:hover {
+  border: white solid 4px;
+}
+
+.place-sukhbaatar {
+  background-color: rgba(238, 233, 217, 0.8);
+}
+
+.place-amarbaysgalant {
+  background-color: rgba(139, 184, 193, 0.8);
+}
+
+.place-khorgo {
+  background-color: rgba(170, 216, 215, 0.8);
+}
+
+.place-terkh {
+  background-color: rgba(139, 192, 189, 0.8);
+}
+
+.place-khuvsgul {
+  background-color: rgba(151, 204, 224, 0.8);
+}
+
+.place h5 {
+  font-size: 24px;
+}
+
+.province {
+  column-gap: 12px;
+}
+
+.province h6 {
+  color: #181818;
+}
+
+.map-pin {
+  width: 14px;
+  height: 14px;
+}
+
+.day {
+  width: 52px;
+  height: 52px;
+  font-size: 14px;
+  border-radius: 50%;
+  background-color: #f7f6f3;
+}
+
+.place-pin {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+}
+
+.place-image {
+  width: 245px;
+  height: 245px;
+  display: none;
+  z-index: 20;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.sukhbaatar-position {
+  top: 450px;
+  left: 1167px;
+}
+
+.amarbaysgalant-position {
+  top: 290px;
+  left: 990px;
+}
+
+.khorgo-position {
+  top: 420px;
+  left: 790px;
+}
+
+.terkh-position {
+  top: 520px;
+  left: 890px;
+}
+
+.khuvsgul-position {
+  top: 230px;
+  left: 749px;
+}
+
+.place-sukhbaatar:hover ~ .sukhbaatar-position {
+  display: block;
+}
+
+.place-amarbaysgalant:hover ~ .amarbaysgalant-position {
+  display: block;
+}
+
+.place-khorgo:hover ~ .khorgo-position {
+  display: block;
+}
+
+.place-terkh:hover ~ .terkh-position {
+  display: block;
+}
+
+.place-khuvsgul:hover ~ .khuvsgul-position {
+  display: block;
+}
+
+.layer {
+  height: 120px;
+  background-color: #d6e4eb;
+}
+
+.price {
+  height: 1120px;
+  background: url("./image/price.png") center/cover no-repeat;
+}
+
+.price-header {
+  text-align: center;
+  padding-block: 40px 80px;
+}
+
+.price-header h5 {
+  opacity: 70%;
+  color: #181818;
+  margin-top: 10px;
+}
+
+.prices {
+  column-gap: 24px;
+  margin-bottom: 116px;
+}
+
+.agency-price {
+  width: 384px;
+  cursor: pointer;
+  border-radius: 40px;
+  padding: 32px 24px 48px;
+  background-color: white;
+}
+
+.agency-price:hover {
+  box-shadow: -8px -8px 0px 0px rgba(46, 65, 71, 0.4), 8px 8px 0px 0px rgba(41, 114, 139, 0.25);
+}
+
+.agency-price:hover button {
+  color: white;
+  background-color: black;
+}
+
+.price-package {
+  font-size: 18px;
+  column-gap: 16px;
+}
+
+.heart {
+  width: 36px;
+  height: 36px;
+}
+
+.price-content {
+  padding-block: 10px 40px;
+}
+
+.price-content h3 {
+  font-size: 40px;
+  margin-top: 24px;
+  font-weight: 600;
+}
+
+.price-content h6 {
+  font-size: 16px;
+  color: #919191;
+  margin-block: 10px 32px;
+}
+
+.price-content h4 {
+  color: #121316;
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+.includes {
+  display: flex;
+  row-gap: 16px;
+  font-size: 14px;
+  color: #3f4145;
+  flex-direction: column;
+  margin-inline: 20px;
+}
+
+.agency-price button {
+  width: 100%;
+  border: none;
+  font-weight: 600;
+  padding-block: 14px;
+  border-radius: 9999px;
+  background-color: #a4d1e2;
+}
+
+footer {
+  column-gap: 20px;
+  padding: 80px 120px;
+}
+
+.social {
+  width: 171px;
+  column-gap: 10px;
+  padding-block: 10px;
+  border-radius: 9999px;
+  background-color: white;
+}
+
+.social img {
+  width: 24px;
+  height: 24px;
+}
+
+footer .pinetour {
+  height: 35px;
+  width: 101px;
+  margin-left: auto;
+}
